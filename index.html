@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Unidades</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="converter-container">
+        <h1>Conversor de Unidades</h1>
+
+        <div class="input-group">
+            <label for="kmInput">Kilómetros:</label>
+            <input type="number" id="kmInput" placeholder="Ingresa kilómetros" oninput="convertKmToMiles()">
+            <span>=</span>
+            <input type="number" id="milesOutput" placeholder="Ingresa millas" oninput="convertMilesToKm()">
+            <label for="milesOutput">Millas</label>
+        </div>
+
+        <div class="input-group">
+            <label for="metersInput">Metros:</label>
+            <input type="number" id="metersInput" placeholder="Ingresa metros" oninput="convertMetersToFeet()">
+            <span>=</span>
+            <input type="number" id="feetOutput" placeholder="Ingresa pies" oninput="convertFeetToMeters()">
+            <label for="feetOutput">Pies</label>
+        </div>
+
+        <div class="input-group">
+            <label for="cmInput">Centímetros:</label>
+            <input type="number" id="cmInput" placeholder="Ingresa centímetros" oninput="convertCmToInches()">
+            <span>=</span>
+            <input type="number" id="inchesOutput" placeholder="Ingresa pulgadas" oninput="convertInchesToCm()">
+            <label for="inchesOutput">Pulgadas</label>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
